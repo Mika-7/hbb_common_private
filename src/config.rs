@@ -77,7 +77,7 @@ lazy_static::lazy_static! {
     // pub static ref BUILTIN_SETTINGS: RwLock<HashMap<String, String>> = Default::default();
     pub static ref BUILTIN_SETTINGS: RwLock<HashMap<String, String>> = {
         let mut map = HashMap::new();
-        map.insert("hide-network-settings".to_string(), "true".to_string());
+        map.insert("hide-network-settings".to_string(), "Y".to_string());
         RwLock::new(map)
     };
 
